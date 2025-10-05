@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 600px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center; 
+            padding: 30px;
+            gap: 25px;
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; 
+            flex-shrink: 0; 
+        }
+        
+        .card-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+        }
+        
+        .card-content p {
+            margin: 0 0 20px 0;
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card-button {
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .card-button:hover {
+            background-color: #4a7dce;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                flex-direction: column; 
+                width: 85vw;
+                padding: 20px;
+                text-align: center; 
+            }
+
+            .card-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://imgs.search.brave.com/MVs_TQ7UIbmuD1zzNHKr2TXcRR8-yBW4UN1tIvQiklw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNC8w/Ni8yMi8xNi81NS9h/aS1nZW5lcmF0ZWQt/ODg0NjY3Ml82NDAu/anBn" alt="If you can't see this then you need to open it in safari" class="card-image">
+        
+        <div class="card-content">
+            <h2>Dhairya Agarwal</h2>
+            <p>When people ask me what I fear, I say, myself, because I don't know what I am dangerously capable of.</p>
+            <div class="card-buttons">
+                <button class="card-button">Contact</button>
+                <button class="card-button">Portfolio</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
